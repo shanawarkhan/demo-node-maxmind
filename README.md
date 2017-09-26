@@ -6,15 +6,18 @@ node-maxmind Build Status
 
 Pure Javascript module for Geo IP lookup using Maxmind binary databases (aka mmdb or geoip2). Fastest Maxmind lookup library available - up to 8000% faster than other libraries. Module has 100% test coverage with comprehensive test suite. It natively works with binary Maxmind database format and doesn't require any "CSV - {specific lib format}" conversions as some other modules do. Maxmind binary databases are highly optimized for size and performance so there's no point working with other than that format.
 
-GEO databases
 
-Free GEO databases are available for download here. If you need better accuracy you should consider buying commercial subscription.
+GEO databases
+#############
+Free GEO databases are available for download here(http://dev.maxmind.com/geoip/geoip2/geolite2/). If you need better accuracy you should consider buying commercial subscription.
+####### Using "GeoLite2-City.mmdb" from above Geo databases source
+
+
 
 Installation
+npm install --save maxmind
 
-npm i maxmind
 Usage
-
 var maxmind = require('maxmind');
 
 maxmind.open('/path/to/GeoLite2-City.mmdb', (err, cityLookup) => {
