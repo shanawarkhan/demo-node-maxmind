@@ -1,23 +1,23 @@
-Demo App for GEO IP lookup using javascript module node-maxmind
+# Demo App for GEO IP lookup using javascript module node-maxmind
 
 
-node-maxmind Build Status
+# node-maxmind Build Status
 (https://github.com/runk/node-maxmind)
 
 Pure Javascript module for Geo IP lookup using Maxmind binary databases (aka mmdb or geoip2). Fastest Maxmind lookup library available - up to 8000% faster than other libraries. Module has 100% test coverage with comprehensive test suite. It natively works with binary Maxmind database format and doesn't require any "CSV - {specific lib format}" conversions as some other modules do. Maxmind binary databases are highly optimized for size and performance so there's no point working with other than that format.
 
 
-GEO databases
+# GEO databases
 #############
 Free GEO databases are available for download here(http://dev.maxmind.com/geoip/geoip2/geolite2/). If you need better accuracy you should consider buying commercial subscription.
-####### Using "GeoLite2-City.mmdb" from above Geo databases source
+** Using "GeoLite2-City.mmdb" from above Geo databases source
 
 
 
-Installation
+###Installation
 npm install --save maxmind
 
-Usage
+###Usage
 var maxmind = require('maxmind');
 
 maxmind.open('/path/to/GeoLite2-City.mmdb', (err, cityLookup) => {
@@ -78,14 +78,15 @@ In case you want to use legacy GeoIP binary databases you should use maxmind@0.6
 
 References
 
-Loosely based on https://github.com/PaddeK/node-maxmind-db
-MaxMind DB file format specification http://maxmind.github.io/MaxMind-DB/
-MaxMind test/sample DB files https://github.com/maxmind/MaxMind-DB
-GeoLite2 Free Downloadable Databases http://dev.maxmind.com/geoip/geoip2/geolite2/
-Great talk about V8 performance https://www.youtube.com/watch?v=UJPdhx5zTaw
-V8 Optimization killers https://github.com/petkaantonov/bluebird/wiki/Optimization-killers
-More V8 performance tips http://www.html5rocks.com/en/tutorials/speed/v8/
-License
+- Loosely based on https://github.com/PaddeK/node-maxmind-db
+- MaxMind DB file format specification http://maxmind.github.io/MaxMind-DB/
+- MaxMind test/sample DB files https://github.com/maxmind/MaxMind-DB
+- GeoLite2 Free Downloadable Databases http://dev.maxmind.com/geoip/geoip2/geolite2/
+- Great talk about V8 performance https://www.youtube.com/watch?v=UJPdhx5zTaw
+- V8 Optimization killers https://github.com/petkaantonov/bluebird/wiki/Optimization-killers
+- More V8 performance tips http://www.html5rocks.com/en/tutorials/speed/v8/
 
+
+License
 MIT
 
